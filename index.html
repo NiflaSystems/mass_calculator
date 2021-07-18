@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Masseinheitenumrechner</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/Animated-CSS-Waves-Background-SVG.css">
+    <link rel="stylesheet" href="assets/css/icon-star-half.css">
+    <link rel="stylesheet" href="assets/css/styles.css?232">
+
+    
+</head>
+
+<body>
+
+    <nav class="navbar navbar-light navbar-expand-md fixed-top navbar-transparency_" style="background-color: #242744;">
+    <div class="container">
+        <div><a class="navbar-brand" href="#"><img src="assets/img/uzh_logo.png" /></a></div>
+
+        <div><h5 class="titleText" id="title_text" style="text-align: center;margin: 0 auto;color: white; font-size: 28px; font-weight: 700;">UZH Masseinheitenumrechner</h5></div>
+
+        <div id="translate">
+            <i class="icon ion-help" style="color: white;margin-right: 35px;" onclick="showhelp();"></i>
+
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+
+                <label id="en" class="btn btn-secondary active">EN<input type="radio" name="options" checked /></label>
+
+                <label id="de" class="btn btn-secondary">DE<input type="radio" name="options" checked /></label></div>
+        </div>
+    </div>
+</nav>
+
+
+   <h4 id="title_text_m" class="titleText" style="text-align: center;margin: 0 auto;color: white;">UZH Masseinheitenumrechner</h4>
+
+<div class="svg-container" style="margin-top_: 15%;">
+<div class="waveWrapper waveAnimation">
+  <div class="waveWrapperInner bgTop">
+    <div class="wave waveTop" style="background-image: url('assets/img/wave-top.png')"></div>
+  </div>
+  <div class="waveWrapperInner bgMiddle">
+    <div class="wave waveMiddle" style="background-image: url('assets/img/wave-mid.png')"></div>
+  </div>
+  <div class="waveWrapperInner bgBottom">
+    <div class="wave waveBottom" style="background-image: url('assets/img/wave-bot.png')"></div>
+  </div>
+</div>
+
+</div>
+
+	
+    <div id="main">
+
+        <div class="container">
+                    <div id="error" class="row"></div>
+        </div>
+
+        <div class="container" style_="border-radius: 12px;background: rgba(255,255,255,0.7);">
+
+            <div class="row text-center" style="padding: 14px;">
+
+              <div class="col-md-6 col__1" >
+
+                <div class="row panes">
+
+                <div class="col-12 calculators" style="border-radius: 12px;background: rgba(255,255,255,0.7);">
+
+                    <div class="row">
+                        <h5 id="calc_title" class="titleText_" style="text-align: center;padding: 3px 0; width: 80%;margin: 3px auto;color: white;background-color:  #242744;">Markerspezifische Umrechung</h5>
+                    <div class="col-md-6">
+                        <p class="titles_"><strong><span class="valueText">Zahl</span></strong></p>
+                        <input id="valToConvert" type="text" class="fields_" ></div>
+                    <div class="col-md-6">
+
+                        <p class="titles_"><strong><span class="markerText">Hormon</span></strong> </p>
+
+                    <select id="variants" class="fields_">
+                            <option value="ACTH">ACTH</option>   
+                            <option value="Allopregnanolon"  selected="">Allopregnanolon</option>
+                            <option value="Antimüller-Hormon"  selected="">Antimüller-Hormon</option>
+                            <option value="CRH">CRH</option>
+                            <option value="DHEA">DHEA</option>
+                            <option value="DHEAS">DHEAS</option>
+                            <option value="FSH">FSH</option>
+                            <option value="GABA">GABA</option>
+                            <option value="Kortisol">Kortisol</option>
+                            <option value="LH">LH</option>
+                            <option value="Ostradiol">Ostradiol</option>
+                            <option value="Pregnanolon">Pregnanolon</option>
+                            <option value="Progesteron">Progesteron</option>
+                            <option value="Testosteron">Testosteron</option>        
+                    </select> </div>
+
+                <div
+                    class="col-12 col-md-4" id="param_1">
+                    <p class="titles_"><strong><span class="fromText">Konvertieren von</span></strong></p>
+
+                    <div id="set_container_1">
+                        <span style="display:none;">1</span>
+                    <select id="param_set_a" class="fields_">
+                        
+                            <option value="pmol/L" selected="">pmol/L</option>
+                            <option value="nmol/L"> nmol/L</option>
+                            <option value="µmol/L">µmol/L</option>
+                            <option value="mol/L">mol/L</option>
+
+                            <option value="pg/mL">pg/mL</option>
+                            <option value="pg/dL">pg/dL</option>
+                            <option value="pg/L">pg/L</option>
+                            <option value="ng/mL">ng/mL</option>
+                            <option value="ng/dL">ng/dL</option>
+                            <option value="ng/L">ng/L</option>
+                            <option value="µg/mL">µg/mL</option>
+                            <option value="µg/dL">µg/dL</option>
+                            <option value="µg/L">µg/L</option>
+                            <option value="pg%">pg%</option>
+                            <option value="ng%">ng%</option>
+                           
+                    </select></div>
+                </div>
+
+            <div
+                id="swap_btn" class="col-12 col-md-1" ><i class="fas fa-sync-alt"></i></div>
+
+
+        <div class="col-12 col-md-4" id="param_2">
+            <p class="titles_"><strong><span class="toText">Zu</span></strong></p>
+
+            <div id="set_container_2">
+                 <span style="display:none;">2</span>
+            <select id="param_set_b" class="fields_">
+            
+              <option value="pg/mL" selected="">pg/mL</option>
+              <option value="pg/dL">pg/dL</option>
+              <option value="pg/L">pg/L</option>
+              <option value="ng/mL">ng/mL</option>
+              <option value="ng/dL">ng/dL</option>
+              <option value="ng/L">ng/L</option>
+              <option value="µg/mL">µg/mL</option>
+              <option value="µg/dL">µg/dL</option>
+              <option value="µg/L">µg/L</option>
+              <option value="pg%">pg%</option>
+              <option value="ng%">ng%</option>
+
+              <option value="pmol/L">pmol/L</option>
+              <option value="nmol/L"> nmol/L</option>
+              <option value="µmol/L">µmol/L</option>
+              <option value="mol/L">mol/L</option>
+            
+        </select>
+    </div>
+    </div>
+
+       
+        <div class="col-12 col-md-3">
+            <p class="titles_ goText" style="visibility: hidden;">Go</p>
+            <button id="calc" class="btn btn-primary fields_" type="button" style="background-color:#0a257d; border-color:#0a257d;"><i class="fa fa-chevron-right"></i></button></div>
+
+        <div class="col-12">
+            <p class="titles_" style="font-size: larger;width: 96%;/*visibility: hidden;*/"><strong><span class="resultText">Ergebnis</span></strong></p>
+            <input id="result" class="form-control-plaintext result_" type="text" value="" readonly=""></div>
+        </div> <!--inner row-->
+        </div><!--inner col-div-->
+
+
+
+
+         <!--inner col-div-2-->
+         <div class="col-12 calculators" style="border-radius: 12px;background: rgba(255,255,255,0.7); margin-top: 14px;" >
+           <div class="row"> 
+
+             <h5 id="calc2_title" class="titleText" style="text-align: center;padding: 3px 0; width: 80%;margin: 3px auto;color: white;background-color:  #242744;"></h5>
+         <div class="col-md-12">
+                        <p class="titles_"><strong><span class="valueText" id="valueText">Zahl</span></strong></p>
+                        <input id="valToConvert2" type="text" class="fields_" ></div>
+
+                   <!--  <div class="col-md-6">
+
+                        <p class="titles_"><strong><span class="markerText" id="markerText">Hormon</span></strong> </p>
+
+                    <select id="variants2" class="fields_">
+                            <option value="pg&pg" selected="">pg & pg</option>   
+                            <option value="ng&ng"  >ng & ng</option>
+                            <option value="ng&pg"  >ng & pg</option>     
+                    </select> </div> -->
+
+                <div
+                    class="col-12 col-md-4" id="param__1">
+                    <p class="titles_ "><strong><span class = "fromText" id="fromText">Konvertieren von</span></strong></p>
+
+                    <div id="set_container__1">
+                        <span style="display:none;">1</span>
+                   <select id="param_set__a" class="fields_">
+                        
+                            <option value="pg/ml" selected="">pg/ml</option>
+                            <option value="pg/dl">pg/dl</option>
+                            <option value="pg/l">pg/l</option>
+                            <option value="ng/ml" >ng/ml</option>
+                            <option value="ng/dl">ng/dl</option>
+                            <option value="ng/l">ng/l</option>
+                           
+                    </select></div>
+                </div>
+
+            <div
+                id="swap_btn2" class="col-12 col-md-1" ><i class="fas fa-sync-alt"></i></div>
+
+
+        <div class="col-12 col-md-4" id="param__2">
+            <p class="titles_"><strong><span  class="toText" id="toText">Zu</span></strong></p>
+
+            <div id="set_container__2">
+                 <span style="display:none;">2</span>
+            <select id="param_set__b" class="fields_">
+
+                        <option value="pg/dl" selected="">pg/dl</option>
+                        <option value="pg/l">pg/l</option>
+                        <option value="pg/ml" >pg/ml</option>
+                        <option value="ng/dl">ng/dl</option>
+                        <option value="ng/l">ng/l</option>
+                        <option value="ng/ml" >ng/ml</option>               
+            
+        </select>
+    </div>
+    </div>
+
+       
+        <div class="col-12 col-md-3">
+            <p id="goText" class="titles_ goText" style="visibility: hidden;">Go</p>
+            <button id="calc2" class="btn btn-primary fields_" type="button" style="background-color:#0a257d; border-color:#0a257d;"><i class="fa fa-chevron-right"></i></button></div>
+
+        <div class="col-12">
+            <p class="titles_" style="font-size: larger;width: 96%;/*visibility: hidden;*/"><strong><span class="resultText" id="resultText">Ergebnis</span></strong></p>
+
+            <input id="result2" class="form-control-plaintext result_" type="text" value="" readonly=""></div>
+        </div> <!--inner row-2-->
+        </div><!--inner col-div-2-->
+
+        </div><!--row-1-->
+
+        </div><!--col-1-->  
+
+
+        
+        <!--description col 2-->  
+        <div id="desc_column" class="col-md-5 offset-1 col__1" style="border-radius: 12px;background: rgba(255,255,255,0.9); max-height: 75vh; overflow-y: scroll; padding: 14px 7px;">
+
+             <!--  <marquee width="100%" height="100%" direction="up" scrollamount="3"> -->
+                <h5 class="modal-title d-none sr-only" ></h5>
+
+                <div class="modal_text" class="text-justify">
+            
+        </div>
+   <!--  </marquee> -->
+
+
+        </div><!--col-2-->
+
+    </div> <!--row-->
+
+
+   <!--  </div> -->
+
+
+
+    <div class="footer-basic">
+    <footer>
+        <p id="deptText" class="text-center"><strong>Psychologisches Institut </strong><br /><strong>Abteilung für Klinische Psychologie &amp; Psychotherapie</strong></p>
+        <p class="text-center" style="font-size: smaller;"><strong><span id="authors">Authors:</span></strong><br /><strong>MSc Denise Herresthal * Dr. phil. Serena Fiacco * MSc Anja Vandersmissen * Prof. Dr. rer. nat. Ulrike Ehlert</strong><br /></p>
+        <p id="footerText" class="copyright">Alle Angaben ohne Gewähr und ohne jegliche Haftung.</p>
+        <p id="footerText" class="copyright">©Universität Zürich <span id="date"></span></p>
+    </footer>
+</div>
+
+</div>
+
+<!-- Button trigger modal -->
+<button id="modal_btn" type="button" class="btn btn-primary d-none" data-toggle="modal" data-target="#ModalLong">
+  Launch modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="ModalLong" tabindex="-1" role="dialog" aria-labelledby="ModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ModalLongTitle">Project Description</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="modal_text" class="text-justify">
+            
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--modal ended -->
+    
+
+
+    <script src="assets/js/jquery.min.js"></script>
+
+    <script src="assets/js/_sets.js?1232"></script>
+    <script src="assets/js/_sets2.js?1232"></script>
+
+    <script src="assets/js/data.js?1232"></script>
+     <script src="assets/js/data2.js?1232"></script>
+
+    <script src="assets/js/script.js?1232"></script>
+    <script src="assets/js/script2.js?1232"></script>
+
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
