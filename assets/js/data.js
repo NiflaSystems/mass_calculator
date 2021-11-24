@@ -4931,23 +4931,23 @@ var data_3 = [
     "Kortisol": 2.73049149767134e-9
   },
   {
-    "Unit_1": "?mol/d",
-    "Unit_2": "?g/24h",
+    "Unit_1": "µmol/d",
+    "Unit_2": "µg/24h",
     "Kortisol": 366.234431
   },
   {
-    "Unit_1": "?g/24h",
-    "Unit_2": "?mol/d",
+    "Unit_1": "µg/24h",
+    "Unit_2": "µmol/d",
     "Kortisol": 0.002730491497671
   },
   {
-    "Unit_1": "?mol/d",
+    "Unit_1": "µmol/d",
     "Unit_2": "ng/24h",
     "Kortisol": 366234.431
   },
   {
     "Unit_1": "ng/24h",
-    "Unit_2": "?mol/d",
+    "Unit_2": "µmol/d",
     "Kortisol": 0.00000273049149767134
   },
   {
@@ -4962,21 +4962,21 @@ var data_3 = [
   },
   {
     "Unit_1": "nmol/d",
-    "Unit_2": "?g/24h",
+    "Unit_2": "µg/24h",
     "Kortisol": 0.366234431
   },
   {
-    "Unit_1": "?g/24h",
+    "Unit_1": "µg/24h",
     "Unit_2": "nmol/d",
     "Kortisol": 2.73049149767134
   },
   {
     "Unit_1": "mol/d",
-    "Unit_2": "?g/24h",
+    "Unit_2": "µg/24h",
     "Kortisol": 366234431
   },
   {
-    "Unit_1": "?g/24h",
+    "Unit_1": "µg/24h",
     "Unit_2": "mol/d",
     "Kortisol": 2.73049149767134e-9
   },
@@ -5002,11 +5002,11 @@ var data_3 = [
   },
   {
     "Unit_1": "pmol/d",
-    "Unit_2": "?g/24h",
+    "Unit_2": "µg/24h",
     "Kortisol": 0.000366234431
   },
   {
-    "Unit_1": "?g/24h",
+    "Unit_1": "µg/24h",
     "Unit_2": "pmol/d",
     "Kortisol": 2730.49149767134
   },
@@ -5041,13 +5041,13 @@ var data_3 = [
     "Kortisol": 0.00000273049149767134
   },
   {
-    "Unit_1": "?mol/d",
+    "Unit_1": "µmol/d",
     "Unit_2": "pg/24h",
     "Kortisol": 366234431
   },
   {
     "Unit_1": "pg/24h",
-    "Unit_2": "?mol/d",
+    "Unit_2": "µmol/d",
     "Kortisol": 2.73049149767134e-9
   },
   {
@@ -5661,23 +5661,23 @@ var data_3 = [
     "Kortisol": 0.001
   },
   {
-    "Unit_1": "?mol/L",
+    "Unit_1": "µmol/L",
     "Unit_2": "pg%",
     "Kortisol": 362209.324
   },
   {
     "Unit_1": "pg%",
-    "Unit_2": "?mol/L",
+    "Unit_2": "µmol/L",
     "Kortisol": 0.00000276083450574011
   },
   {
-    "Unit_1": "?mol/L",
+    "Unit_1": "µmol/L",
     "Unit_2": "ng%",
     "Kortisol": 362.209324
   },
   {
     "Unit_1": "ng%",
-    "Unit_2": "?mol/L",
+    "Unit_2": "µmol/L",
     "Kortisol": 0.00276083450574
   }
 ];
@@ -5956,23 +5956,23 @@ var data_4 = [
     "DHEA": 3.46970511982401e-9
   },
   {
-    "Unit_1": "?mol/d",
-    "Unit_2": "?g/24h",
+    "Unit_1": "µmol/d",
+    "Unit_2": "µg/24h",
     "DHEA": 288.20893
   },
   {
-    "Unit_1": "?g/24h",
-    "Unit_2": "?mol/d",
+    "Unit_1": "µg/24h",
+    "Unit_2": "µmol/d",
     "DHEA": 0.003469705119824
   },
   {
-    "Unit_1": "?mol/d",
+    "Unit_1": "µmol/d",
     "Unit_2": "ng/24h",
     "DHEA": 288208.93
   },
   {
     "Unit_1": "ng/24h",
-    "Unit_2": "?mol/d",
+    "Unit_2": "µmol/d",
     "DHEA": 0.00000346970511982401
   },
   {
@@ -5987,21 +5987,21 @@ var data_4 = [
   },
   {
     "Unit_1": "nmol/d",
-    "Unit_2": "?g/24h",
+    "Unit_2": "µg/24h",
     "DHEA": 0.28820893
   },
   {
-    "Unit_1": "?g/24h",
+    "Unit_1": "µg/24h",
     "Unit_2": "nmol/d",
     "DHEA": 3.46970511982401
   },
   {
     "Unit_1": "mol/d",
-    "Unit_2": "?g/24h",
+    "Unit_2": "µg/24h",
     "DHEA": 288208930
   },
   {
-    "Unit_1": "?g/24h",
+    "Unit_1": "µg/24h",
     "Unit_2": "mol/d",
     "DHEA": 3.46970511982401e-9
   },
@@ -6027,11 +6027,11 @@ var data_4 = [
   },
   {
     "Unit_1": "pmol/d",
-    "Unit_2": "?g/24h",
+    "Unit_2": "µg/24h",
     "DHEA": 0.00028820893
   },
   {
-    "Unit_1": "?g/24h",
+    "Unit_1": "µg/24h",
     "Unit_2": "pmol/d",
     "DHEA": 3469.70511982401
   },
@@ -6066,13 +6066,13 @@ var data_4 = [
     "DHEA": 0.00000346970511982401
   },
   {
-    "Unit_1": "?mol/d",
+    "Unit_1": "µmol/d",
     "Unit_2": "pg/24h",
     "DHEA": 288208930
   },
   {
     "Unit_1": "pg/24h",
-    "Unit_2": "?mol/d",
+    "Unit_2": "µmol/d",
     "DHEA": 3.46970511982401e-9
   },
   {
@@ -6706,23 +6706,23 @@ var data_4 = [
     "DHEA": 0.001
   },
   {
-    "Unit_1": "?mol/L",
+    "Unit_1": "µmol/L",
     "Unit_2": "pg%",
     "DHEA": 28820893
   },
   {
     "Unit_1": "pg%",
-    "Unit_2": "?mol/L",
+    "Unit_2": "µmol/L",
     "DHEA": 3.46970511982401e-8
   },
   {
-    "Unit_1": "?mol/L",
+    "Unit_1": "µmol/L",
     "Unit_2": "ng%",
     "DHEA": 28820.893
   },
   {
     "Unit_1": "ng%",
-    "Unit_2": "?mol/L",
+    "Unit_2": "µmol/L",
     "DHEA": 0.0000346970511982401
   }
 ];

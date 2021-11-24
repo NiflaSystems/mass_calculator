@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
     <link rel="stylesheet" href="assets/css/Animated-CSS-Waves-Background-SVG.css">
     <link rel="stylesheet" href="assets/css/icon-star-half.css">
-    <link rel="stylesheet" href="assets/css/styles.css?232">
+    <link rel="stylesheet" href="assets/css/styles.css?237">
 
     
 </head>
@@ -25,12 +25,13 @@
 
     <nav class="navbar navbar-light navbar-expand-md fixed-top navbar-transparency_" style="background-color: #242744;">
     <div class="container">
-        <div><a class="navbar-brand" href="#"><img src="assets/img/uzh_logo.png" /></a></div>
+        <div><a class="navbar-brand" href="#"><img id="logo" src="assets/img/uzh_logo_de.png" /></a></div>
 
         <div><h5 class="titleText" id="title_text" style="text-align: center;margin: 0 auto;color: white; font-size: 28px; font-weight: 700;">UZH Masseinheitenumrechner</h5></div>
 
         <div id="translate">
-            <i class="icon ion-help" style="color: white;margin-right: 35px;" onclick="showhelp();"></i>
+            <span class="icon-help" style="cursor: pointer; font-size: 18px; color: white;margin-right: 35px;" onclick="showhelp();">info</span>
+            <!-- <i class="icon ion-help" style="color: white;margin-right: 35px;" onclick="showhelp();"></i> -->
 
             <div class="btn-group btn-group-toggle" data-toggle="buttons">
 
@@ -273,11 +274,18 @@
    <!--  </div> -->
 
 
-
     <div class="footer-basic">
     <footer>
-        <p id="deptText" class="text-center"><strong>Psychologisches Institut </strong><br /><strong>Abteilung für Klinische Psychologie &amp; Psychotherapie</strong></p>
-        <p class="text-center" style="font-size: smaller;"><strong><span id="authors">Authors:</span></strong><br /><strong>MSc Denise Herresthal * Dr. phil. Serena Fiacco * MSc Anja Vandersmissen * Prof. Dr. rer. nat. Ulrike Ehlert</strong><br /></p>
+        <p class="text-center" style="font-size: smaller;">
+            <strong><span id="authors">Authors:</span></strong><br />
+            <strong>MSc Denise Herresthal * Dr. phil. Serena Fiacco * MSc Anja Vandersmissen * Prof. Dr. rer. nat. Ulrike Ehlert</strong><br />
+        </p>
+
+        <p id="deptText" class="text-center">
+            <strong>Psychologisches Institut </strong><br />
+            <strong>Abteilung für Klinische Psychologie &amp; Psychotherapie</strong>
+        </p>
+
         <p id="footerText" class="copyright">Alle Angaben ohne Gewähr und ohne jegliche Haftung.</p>
         <p id="footerText" class="copyright">©Universität Zürich <span id="date"></span></p>
     </footer>
@@ -295,7 +303,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="ModalLongTitle">Project Description</h5>
+        <!-- <h5 class="modal-title" id="ModalLongTitle">Project Description</h5> -->
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -317,14 +325,14 @@
 
     <script src="assets/js/jquery.min.js"></script>
 
-    <script src="assets/js/_sets.js?1232"></script>
-    <script src="assets/js/_sets2.js?1232"></script>
+    <script src="assets/js/_sets.js?17856"></script>
+    <script src="assets/js/_sets2.js?17856"></script>
 
-    <script src="assets/js/data.js?1232"></script>
-     <script src="assets/js/data2.js?1232"></script>
+    <script src="assets/js/data.js?17856"></script>
+     <script src="assets/js/data2.js?17856"></script>
 
-    <script src="assets/js/script.js?1232"></script>
-    <script src="assets/js/script2.js?1232"></script>
+    <script src="assets/js/script.js?17856"></script>
+    <script src="assets/js/script2.js?17856"></script>
 
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
